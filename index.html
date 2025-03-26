@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorio Congreso</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <!-- Banner con logos -->
+  <div class="banner w-full flex justify-between items-center px-8 bg-white">
+    <img src="img/Logo-Praxis.png" alt="Logo-Praxis" class="h-[80px]">
+    <img src="img/Logo ISSSTE.png" alt="Logo ISSSTE" class="h-[80px]">
+  </div>
+
+  <!-- Menú -->
+  <nav class="menu flex justify-end items-center px-10 text-white space-x-6">
+    <a href="#congreso" class="hover:underline">Congreso</a>
+    <a href="#actividades" class="hover:underline">Actividades complementarias</a>
+    <a href="#constancia" class="hover:underline">Descarga tu constancia</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero w-full h-[630px] bg-gray-200 flex items-center justify-center">
+    
+  </section>
+
+  <!-- Sección principal -->
+  <section class="main w-full px-10 py-6">
+    <div class="button_section flex gap-4 mb-6">
+      <button id="btnCongreso" class="tab-button active" onclick="showTab('congreso')">Congreso</button>
+      <button id="btnActividades" class="tab-button" onclick="showTab('actividades')">Actividades Complementarias</button>
+    </div>
+
+    <div id="congreso" class="tab-content">
+      <h2 class="text-2xl font-bold mb-2">Congreso Día 1</h2>
+      <hr class="yellow">
+      <div class="flex flex-wrap gap-4">
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EuyOFS92MnZHrU4vT7EDb60B8YgMHJFWGSiBNWLOYCF_sQ?e=AitC22">
+            <div class="thumbnail">
+                <img src="./img/congreso1-1.png" alt="">
+                <h2>Inauguración</h2>
+            </div>
+        </a>
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Ev3-rRL45YJLgJ2tOa-SwUkBl-pt1qn-FcSss27717P3fA?e=lgDofl">
+            <div class="thumbnail">
+                <img src="./img/congreso1-2.png" alt="">
+                <h2>Conferencia Dr. Carlos Montaño</h2>
+            </div>
+        </a>
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eq5i-LKQ_ypOiKXD37XLUqcBOLBPK-IQyWJVAFCVZn5DUw?e=8aQb3B">
+            <div class="thumbnail">
+                <img src="./img/congreso1-3.png" alt="">
+                <h2>Mesa: Rutas para el bienestar</h2>
+            </div>
+        </a>
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EgrPxS9iTK1NsTBbfSxS5EgBNXTGLwGnpnl_sP1pPPWW0Q?e=0kbg4v">
+            <div class="thumbnail">
+                <img src="./img/congreso1-3.png" alt="">
+                <h2>Mesa: Formación de
+                    cuadros y
+                    participación
+                    ciudadana: ejes
+                    articuladores del
+                    Estado de Bienestar</h2>
+            </div>
+        </a>
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eotsoi8GXbZPkYFqwFiPWQEBNE47YbYEOtEE-hIw0G3Geg?e=czcMDX">
+            <div class="thumbnail">
+                <img src="./img/congreso1-4.png" alt="">
+                <h2>Mesa: La mujer
+                    como agente
+                    transformador
+                    en el Estado de 
+                    Bienestar</h2>
+            </div>
+        </a>
+        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EtZAJoU-aaRIl23YheDt9bgBn4iqdhTi9zu4AwEHGoABGA?e=Q1uAtn">
+            <div class="thumbnail">
+                <img src="./img/congreso1-5.png" alt="">
+                <h2>Conferencia Dra. Graciela Rosso</h2>
+            </div>
+        </a>
+      </div>
+      <br><br><br>
+      <h2 class="text-2xl font-bold mb-2">Congreso Día 2</h2>
+      <hr class="yellow">
+      <div class="flex flex-wrap gap-4">
+        <a href="">
+            <div class="thumbnail">
+                <img src="./img/congreso1-1.png" alt="">
+                <h2>Inauguración</h2>
+            </div>
+        </a>
+        
+        <div class="thumbnail">
+            <img src="./img/congreso1-2.png" alt="">
+            <h2>Conferencia Dr. Carlos Montaño</h2>
+        </div>
+        <div class="thumbnail">
+            <img src="./img/congreso1-3.png" alt="">
+            <h2>Mesa: Rutas para el bienestar</h2>
+        </div>
+        <div class="thumbnail">
+            <img src="./img/congreso1-4.png" alt="">
+            <h2>Mesa: Formación de
+                cuadros y
+                participación
+                ciudadana: ejes
+                articuladores del
+                Estado de Bienestar</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="actividades" class="tab-content hidden">
+      <h2 class="text-2xl font-bold">Prueba</h2>
+    </div>
+  </section>
+
+
+  <footer></footer>
+</body>
+</html>
