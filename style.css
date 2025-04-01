@@ -36,8 +36,13 @@ hr.yellow:before {
     content: " ";
 }
 .thumbnail{
-    width: 300px;
-    margin-bottom: 100px;
+    width: 400px;
+    margin: 5px;
+    margin-bottom: 95px;
+}
+iframe{
+    width: 100%;
+    height: 200px;
 }
 .contenedor{
     border-radius: 20px;
@@ -52,7 +57,7 @@ hr.yellow:before {
     text-align: center;
     padding: 20px;
     font-family: "Noto Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 ul li{
     padding: 8px;
