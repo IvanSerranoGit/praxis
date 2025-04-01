@@ -1,126 +1,409 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repositorio Congreso</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Congreso</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-sans text-gray-800 bg-gray-50">
-  <!-- Banner con logos -->
-  <div class="banner w-full flex justify-between items-center px-8 bg-white">
-    <img src="img/Logo-Praxis.png" alt="Logo-Praxis" class="h-[80px]">
-    <img src="img/Logo ISSSTE.png" alt="Logo ISSSTE" class="h-[80px]">
-  </div>
-
-  <!-- Menú -->
-  <nav class="menu flex justify-end items-center px-10 text-white space-x-6">
-    <a href="#congreso" class="hover:underline">Congreso</a>
-    <a href="#actividades" class="hover:underline">Actividades complementarias</a>
-    <a href="#constancia" class="hover:underline">Descarga tu constancia</a>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero w-full h-[630px] bg-gray-200 flex items-center justify-center">
-    
-  </section>
-
-  <!-- Sección principal -->
-  <section class="main w-full px-10 py-6">
-    <div class="button_section flex gap-4 mb-6">
-      <button id="btnCongreso" class="tab-button active" onclick="showTab('congreso')">Congreso</button>
-      <button id="btnActividades" class="tab-button" onclick="showTab('actividades')">Actividades Complementarias</button>
+    <!-- Banner con logos -->
+    <div class="banner w-full flex justify-between items-center px-8 bg-white">
+        <img src="img/Logo-Praxis.png" alt="Logo-Praxis" class="h-[80px]">
+        <img src="img/Logo ISSSTE.png" alt="Logo ISSSTE" class="Logo_ISSSTE h-[80px]">
     </div>
 
-    <div id="congreso" class="tab-content">
-      <h2 class="text-2xl font-bold mb-2">Congreso Día 1</h2>
-      <hr class="yellow">
-      <div class="flex flex-wrap gap-4">
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EuyOFS92MnZHrU4vT7EDb60B8YgMHJFWGSiBNWLOYCF_sQ?e=AitC22">
-            <div class="thumbnail">
-                <img src="./img/congreso1-1.png" alt="">
-                <h2>Inauguración</h2>
-            </div>
-        </a>
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Ev3-rRL45YJLgJ2tOa-SwUkBl-pt1qn-FcSss27717P3fA?e=lgDofl">
-            <div class="thumbnail">
-                <img src="./img/congreso1-2.png" alt="">
-                <h2>Conferencia Dr. Carlos Montaño</h2>
-            </div>
-        </a>
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eq5i-LKQ_ypOiKXD37XLUqcBOLBPK-IQyWJVAFCVZn5DUw?e=8aQb3B">
-            <div class="thumbnail">
-                <img src="./img/congreso1-3.png" alt="">
-                <h2>Mesa: Rutas para el bienestar</h2>
-            </div>
-        </a>
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EgrPxS9iTK1NsTBbfSxS5EgBNXTGLwGnpnl_sP1pPPWW0Q?e=0kbg4v">
-            <div class="thumbnail">
-                <img src="./img/congreso1-3.png" alt="">
-                <h2>Mesa: Formación de
-                    cuadros y
-                    participación
-                    ciudadana: ejes
-                    articuladores del
-                    Estado de Bienestar</h2>
-            </div>
-        </a>
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eotsoi8GXbZPkYFqwFiPWQEBNE47YbYEOtEE-hIw0G3Geg?e=czcMDX">
-            <div class="thumbnail">
-                <img src="./img/congreso1-4.png" alt="">
-                <h2>Mesa: La mujer
-                    como agente
-                    transformador
-                    en el Estado de 
-                    Bienestar</h2>
-            </div>
-        </a>
-        <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EtZAJoU-aaRIl23YheDt9bgBn4iqdhTi9zu4AwEHGoABGA?e=Q1uAtn">
-            <div class="thumbnail">
-                <img src="./img/congreso1-5.png" alt="">
-                <h2>Conferencia Dra. Graciela Rosso</h2>
-            </div>
-        </a>
-      </div>
-      <br><br><br>
-      <h2 class="text-2xl font-bold mb-2">Congreso Día 2</h2>
-      <hr class="yellow">
-      <div class="flex flex-wrap gap-4">
-        <a href="">
-            <div class="thumbnail">
-                <img src="./img/congreso1-1.png" alt="">
-                <h2>Inauguración</h2>
-            </div>
-        </a>
-        
-        <div class="thumbnail">
-            <img src="./img/congreso1-2.png" alt="">
-            <h2>Conferencia Dr. Carlos Montaño</h2>
-        </div>
-        <div class="thumbnail">
-            <img src="./img/congreso1-3.png" alt="">
-            <h2>Mesa: Rutas para el bienestar</h2>
-        </div>
-        <div class="thumbnail">
-            <img src="./img/congreso1-4.png" alt="">
-            <h2>Mesa: Formación de
-                cuadros y
-                participación
-                ciudadana: ejes
-                articuladores del
-                Estado de Bienestar</h2>
-        </div>
-      </div>
-    </div>
+    <!-- Menú -->
+    <nav class="menu flex justify-end items-center px-10 text-white space-x-6">
+        <a href="#congreso" class="hover:underline">Congreso</a>
+        <a href="#actividades" class="hover:underline">Actividades complementarias</a>
+        <a href="#constancia" class="hover:underline">Descarga tu constancia</a>
+    </nav>
 
-    <div id="actividades" class="tab-content hidden">
-      <h2 class="text-2xl font-bold">Prueba</h2>
-    </div>
-  </section>
+    <!-- Hero -->
+    <section class="hero w-full h-[630px] bg-gray-200 flex items-center justify-center">
 
+    </section>
 
-  <footer></footer>
+    <!-- Sección principal -->
+    <section class="main w-full px-10 py-6">
+        <div class="button_section flex gap-4 mb-6">
+            <button id="btnCongreso" class="tab-button active" onclick="showTab('congreso')">Congreso</button>
+            <button id="btnActividades" class="tab-button" onclick="showTab('actividades')">Actividades
+                Complementarias</button>
+        </div>
+
+        <div id="congreso" class="tab-content">
+            <h2 class="text-2xl font-bold mb-2">Conferencias</h2>
+            <hr class="yellow">
+            <div class="flex flex-wrap gap-4">
+                <div class="thumbnail">
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EuyOFS92MnZHrU4vT7EDb60B8YgMHJFWGSiBNWLOYCF_sQ?e=AitC22">
+                        <div class="contenedor">
+                            <iframe
+                                src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=d03d172f-fd30-4fab-a7d5-26586f77a38b&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                                frameborder="0" scrolling="no" allowfullscreen
+                                title="PRAXIS INAUGURACIÓN.mp4"></iframe>
+                        </div>
+                    </a>
+                    <h2 class="subtitulos">Inauguración</h2>
+                    <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EuyOFS92MnZHrU4vT7EDb60B8YgMHJFWGSiBNWLOYCF_sQ?e=Y5wP4t" class="btn-contenidos">Ver fotos y videos</a>
+                </div>
+                <div class="thumbnail">
+                    <a href="">
+                        <div class="contenedor">
+                            <iframe
+                                src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=4a900785-4ca6-49ae-89ad-b0a4a511963e&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                                frameborder="0" scrolling="no" allowfullscreen
+                                title="Conferencia Carlos Montaño .mp4"></iframe>
+                        </div>
+                    </a>
+                    <h2 class="subtitulos">Articulación de los saberes
+                        científicos y la acción política. <br> Dr. Carlos Montaño, Uruguay</h2>
+                    <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Ev3-rRL45YJLgJ2tOa-SwUkBl-pt1qn-FcSss27717P3fA?e=QB58sD" class="btn-contenidos">Ver fotos y videos</a>
+                </div>
+                <div class="thumbnail">
+                    <a href="">
+                        <div class="contenedor">
+                            <iframe src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=8b23fc0f-fa5a-4e91-9bf3-e5227b880986&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" frameborder="0" scrolling="no" allowfullscreen title="Conferencia Graciela Rosso audio ok.mp4"></iframe>
+                        </div>
+                    </a>
+                    <h2 class="subtitulos">Reconstrucción y
+                        desarticulación de los
+                        derechos sociales en Argentina. 
+                        <br> Dra. Graciela Rosso, Argentina</h2>
+                    <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EtZAJoU-aaRIl23YheDt9bgBn4iqdhTi9zu4AwEHGoABGA?e=0yahKA" class="btn-contenidos">Ver fotos y videos</a>
+                </div>
+                <div class="thumbnail">
+                    <a href="">
+                        <div class="contenedor">
+                            <iframe src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=0dfe9138-d6b9-492d-bdb8-b2cbea9daf70&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" frameborder="0" scrolling="no" allowfullscreen title="Conferencia Emir Sader audio ok.mp4"></iframe>
+                        </div>
+                    </a>
+                    <h2 class="subtitulos">Conferencia: La reconstrucción
+                        posneoliberal y el Estado de Bienestar
+                        Social en Brasil
+                        <br> Dr. Emir Sader, Brasil</h2>
+                    <a href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Erb5hkz6OtBJvNqU0diKyQgBYvArGi7Zp2rBN_j4GvIGJg?e=oUNBNU" class="btn-contenidos">Ver fotos y videos</a>
+                </div>
+                <div class="thumbnail">
+                    <a href="">
+                        <div class="contenedor">
+                            <iframe src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=8b23fc0f-fa5a-4e91-9bf3-e5227b880986&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" frameborder="0" scrolling="no" allowfullscreen title="Conferencia Graciela Rosso audio ok.mp4"></iframe>
+                        </div>
+                    </a>
+                    <h2 class="subtitulos">Conferencia: La reconstrucción
+                        posneoliberal y el Estado de Bienestar
+                        Social en Brasil
+                        <br> Dr. Emir Sader, Brasil</h2>
+                    <a href="" class="btn-contenidos">Ver fotos y videos</a>
+                </div>
+
+                <a
+                    href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Erb5hkz6OtBJvNqU0diKyQgBYvArGi7Zp2rBN_j4GvIGJg?e=oUNBNU">
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-3.png" alt="">
+                        <h2 class="subtitulos">Mesa: Rutas para el bienestar</h2>
+                        <p class="parrafo"><b>Coordina:</b> Dra. Berenice P. Ramírez López
+                            (UNAM)
+                        </p>
+                        <ul>
+                            <li>Dr. David Martínez Mendizábal (REMIPSO)
+                            </li>
+                            <li>Dr. José Moya Medina (OPS/OMS)
+                            </li>
+                            <li>Dra. Liz Odelnis Cruz Rodríguez (Médico
+                                cubana en misión en México)
+                            </li>
+                            <li>Mtro. Elí Evangelista Martínez (ISSSTE)
+                            </li>
+                            <li>Mtro. Francisco Calzada Lemus (UNAM)</li>
+                        </ul>
+                    </div>
+                </a>
+                <a
+                    href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EgrPxS9iTK1NsTBbfSxS5EgBNXTGLwGnpnl_sP1pPPWW0Q?e=0kbg4v">
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-3.png" alt="">
+                        <h2 class="subtitulos">Mesa: Formación de
+                            cuadros y
+                            participación
+                            ciudadana: ejes
+                            articuladores del
+                            Estado de Bienestar</h2>
+                        <p class="parrafo"><b>Coordina:</b> Dra. Lucía Álvarez Enríquez (UNAM)
+                        </p>
+                        <ul>
+                            <li>Mtro. José Pedro Kumamoto Aguilar (CISS)
+                            </li>
+                            <li>Dr. Pastor Castell-Florit Serrate (ENSP, Cuba)
+                            </li>
+                            <li>Mtro. Juan Gerardo López Hernández (ISSSTE)
+                            </li>
+                            <li>Dra. Ana Rita Castro (UNAM)
+                            </li>
+                            <li>Dr. Luis Gerardo Rodríguez Lozano (UANL)</li>
+                        </ul>
+                    </div>
+                </a>
+                <a
+                    href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eotsoi8GXbZPkYFqwFiPWQEBNE47YbYEOtEE-hIw0G3Geg?e=czcMDX">
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-4.png" alt="">
+                        <h2 class="subtitulos">Mesa: La mujer
+                            como agente
+                            transformador
+                            en el Estado de
+                            Bienestar</h2>
+                        <p class="parrafo"><b>Coordina:</b> Dra. María Elvira Concheiro Bórquez
+                            (Secretaría de la Mujer)
+                        </p>
+                        <ul>
+                            <li>Dra. Estela Gispert Abreu (ENSP, Cuba)
+                            </li>
+                            <li>Dra. Odeth Santos Madrigal (CLACSO)
+                            </li>
+                            <li>Dra. Virginia García Sánchez (UNAM)
+                            </li>
+                            <li>Dra. Ana Rita Castro (UNAM)
+                            </li>
+                            <li>Dra. Julie-Anne Boudreau (UNAM)</li>
+                        </ul>
+                    </div>
+                </a>
+                <a
+                    href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EtZAJoU-aaRIl23YheDt9bgBn4iqdhTi9zu4AwEHGoABGA?e=Q1uAtn">
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-5.png" alt="">
+                        <h2 class="subtitulos">Conferencia: Reconstrucción y
+                            desarticulación de los
+                            derechos sociales en Argentina.</h2>
+                        <p class="parrafo">Dra. Graciela Rosso, Argentina</p>
+                    </div>
+                </a>
+            </div>
+            <br><br><br>
+            <h2 class="text-2xl font-bold mb-2">Congreso Día 2</h2>
+            <hr class="yellow">
+            <div class="flex flex-wrap gap-4">
+                <a href="">
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-1.png" alt="">
+                        <h2 class="subtitulos">Conferencia Dr. Emir Sader</h2>
+                    </div>
+                </a>
+
+                <div class="thumbnail">
+                    <img src="./img/congreso1-2.png" alt="">
+                    <h2 class="subtitulos">Conferencia Dr. Juan Gerardo</h2>
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/congreso1-3.png" alt="">
+                    <h2 class="subtitulos">Conferencia Dra. Juana Suárez
+                        Conejero</h2>
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/congreso1-4.png" alt="">
+                    <h2 class="subtitulos">Conferencia Dr. Marcos Roitman
+                        Rosenmann</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="actividades" class="tab-content hidden">
+            <div id="congreso" class="tab-content">
+                <h2 class="text-2xl font-bold mb-2"></h2>
+                <hr class="yellow">
+                <div class="flex flex-wrap gap-4">
+                    <div class="thumbnail">
+                        <a
+                            href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EuyOFS92MnZHrU4vT7EDb60B8YgMHJFWGSiBNWLOYCF_sQ?e=AitC22">
+                            <div class="contenedor">
+                                <img class="imagen" src="./img/congreso1-1.png" alt="">
+                                <iframe
+                                    src="https://issste-my.sharepoint.com/personal/ivan_serrano_issste_gob_mx/_layouts/15/embed.aspx?UniqueId=d03d172f-fd30-4fab-a7d5-26586f77a38b&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+                                    width="640" height="360" frameborder="0" scrolling="no" allowfullscreen
+                                    title="PRAXIS INAUGURACIÓN.mp4"></iframe>
+                            </div>
+                        </a>
+                        <h2 class="subtitulos">Inauguración</h2>
+                        <ul>
+                            <li>Dr. Martí Batres Guadarrama, Director General
+                                del ISSSTE
+                            </li>
+                            <li>Dr. David Kershenobich, Secretario de Salud
+                                Ariadna Montiel, Secretaria del Bienestar
+                            </li>
+                            <li>Dra. Rosaura Ruiz Gutiérrez, Secretaria de
+                                Ciencias, Humanidades, Tecnología e
+                                Innovación
+                            </li>
+                            <li>Dra. María Elvira Concheiro Bórquez,
+                                Subsecretaria de la Mujer
+                            </li>
+                            <li>Dr. José Moya, Representante de la Oficina
+                                OMS/OPS en México</li>
+                            <li>Mtro. José Pedro Kumamoto Aguilar,
+                                Secretario General de la Conferencia
+                                Interamericana de Seguridad Social</li>
+                        </ul>
+                    </div>
+
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Ev3-rRL45YJLgJ2tOa-SwUkBl-pt1qn-FcSss27717P3fA?e=lgDofl">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-2.png" alt="">
+                            <h2 class="subtitulos">Conferencia: Articulación de los saberes
+                                científicos y la acción política.</h2>
+                            <p class="parrafo">Dr. Carlos Montaño, Uruguay</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eq5i-LKQ_ypOiKXD37XLUqcBOLBPK-IQyWJVAFCVZn5DUw?e=8aQb3B">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-3.png" alt="">
+                            <h2 class="subtitulos">Mesa: Rutas para el bienestar</h2>
+                            <p class="parrafo"><b>Coordina:</b> Dra. Berenice P. Ramírez López
+                                (UNAM)
+                            </p>
+                            <ul>
+                                <li>Dr. David Martínez Mendizábal (REMIPSO)
+                                </li>
+                                <li>Dr. José Moya Medina (OPS/OMS)
+                                </li>
+                                <li>Dra. Liz Odelnis Cruz Rodríguez (Médico
+                                    cubana en misión en México)
+                                </li>
+                                <li>Mtro. Elí Evangelista Martínez (ISSSTE)
+                                </li>
+                                <li>Mtro. Francisco Calzada Lemus (UNAM)</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EgrPxS9iTK1NsTBbfSxS5EgBNXTGLwGnpnl_sP1pPPWW0Q?e=0kbg4v">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-3.png" alt="">
+                            <h2 class="subtitulos">Mesa: Formación de
+                                cuadros y
+                                participación
+                                ciudadana: ejes
+                                articuladores del
+                                Estado de Bienestar</h2>
+                            <p class="parrafo"><b>Coordina:</b> Dra. Lucía Álvarez Enríquez (UNAM)
+                            </p>
+                            <ul>
+                                <li>Mtro. José Pedro Kumamoto Aguilar (CISS)
+                                </li>
+                                <li>Dr. Pastor Castell-Florit Serrate (ENSP, Cuba)
+                                </li>
+                                <li>Mtro. Juan Gerardo López Hernández (ISSSTE)
+                                </li>
+                                <li>Dra. Ana Rita Castro (UNAM)
+                                </li>
+                                <li>Dr. Luis Gerardo Rodríguez Lozano (UANL)</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/Eotsoi8GXbZPkYFqwFiPWQEBNE47YbYEOtEE-hIw0G3Geg?e=czcMDX">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-4.png" alt="">
+                            <h2 class="subtitulos">Mesa: La mujer
+                                como agente
+                                transformador
+                                en el Estado de
+                                Bienestar</h2>
+                            <p class="parrafo"><b>Coordina:</b> Dra. María Elvira Concheiro Bórquez
+                                (Secretaría de la Mujer)
+                            </p>
+                            <ul>
+                                <li>Dra. Estela Gispert Abreu (ENSP, Cuba)
+                                </li>
+                                <li>Dra. Odeth Santos Madrigal (CLACSO)
+                                </li>
+                                <li>Dra. Virginia García Sánchez (UNAM)
+                                </li>
+                                <li>Dra. Ana Rita Castro (UNAM)
+                                </li>
+                                <li>Dra. Julie-Anne Boudreau (UNAM)</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a
+                        href="https://issste-my.sharepoint.com/:f:/g/personal/ivan_serrano_issste_gob_mx/EtZAJoU-aaRIl23YheDt9bgBn4iqdhTi9zu4AwEHGoABGA?e=Q1uAtn">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-5.png" alt="">
+                            <h2 class="subtitulos">Conferencia: Reconstrucción y
+                                desarticulación de los
+                                derechos sociales en Argentina.</h2>
+                            <p class="parrafo">Dra. Graciela Rosso, Argentina</p>
+                        </div>
+                    </a>
+                </div>
+                <br><br><br>
+                <h2 class="text-2xl font-bold mb-2">Congreso Día 2</h2>
+                <hr class="yellow">
+                <div class="flex flex-wrap gap-4">
+                    <a href="">
+                        <div class="thumbnail">
+                            <img src="./img/congreso1-1.png" alt="">
+                            <h2 class="subtitulos">Conferencia Dr. Emir Sader</h2>
+                        </div>
+                    </a>
+
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-2.png" alt="">
+                        <h2 class="subtitulos">Conferencia Dr. Juan Gerardo</h2>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-3.png" alt="">
+                        <h2 class="subtitulos">Conferencia Dra. Juana Suárez
+                            Conejero</h2>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="./img/congreso1-4.png" alt="">
+                        <h2 class="subtitulos">Conferencia Dr. Marcos Roitman
+                            Rosenmann</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de noticias -->
+    <section class="w-full px-10 py-10 noticias-container">
+        <div class="noticias">
+            <h2 class="text-2xl font-bold mb-2 text-white">Noticias</h2>
+            <hr class="border-t border-gray-300 mb-2">
+            <div class="w-[55px] h-[6px] bg-[#B38E5D] mb-6"></div>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://noticia1.com" target="_blank">
+                    <img src="images/noticia1.jpg" alt="Noticia 1" class="w-[281px] h-[145px] object-cover" />
+                </a>
+                <a href="https://noticia2.com" target="_blank">
+                    <img src="images/noticia2.jpg" alt="Noticia 2" class="w-[281px] h-[145px] object-cover" />
+                </a>
+                <a href="https://noticia3.com" target="_blank">
+                    <img src="images/noticia3.jpg" alt="Noticia 3" class="w-[281px] h-[145px] object-cover" />
+                </a>
+                <a href="https://noticia4.com" target="_blank">
+                    <img src="images/noticia4.jpg" alt="Noticia 4" class="w-[281px] h-[145px] object-cover" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
 </body>
+
 </html>
