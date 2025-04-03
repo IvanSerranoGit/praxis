@@ -40,6 +40,11 @@ hr.yellow:before {
     margin: 5px;
     margin-bottom: 95px;
 }
+.thumbnail-noticias{
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px;
+}
 iframe{
     width: 100%;
     height: 200px;
