@@ -27,7 +27,7 @@ hr.yellow {
     border-top-color: #DCE0E0;
 }
 hr.yellow:before {
-    width: 35px;
+    width: 90%;
     height: 5px;
     background-color: #B38E5D;
     position: absolute;
@@ -35,11 +35,47 @@ hr.yellow:before {
 hr.yellow:before {
     content: " ";
 }
+.main{
+    margin: 60px auto;
+    text-align: center;
+
+}
+.data{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center;
+}
+.container-data{
+    justify-content: center;
+}
+.foto{
+    max-width: 150px;
+    max-height: 150px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.im-sec{
+    align-items: center;
+}
+.ima-data{
+    width: 300px;
+}
+.foto-data{
+    max-width: 200px;
+    max-height: 200px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.inauguración{
+    justify-content:space-evenly;
+}
 .thumbnail{
     width: 400px;
     margin: 5px;
     margin-bottom: 95px;
 }
+
 .thumbnail-noticias{
     border-radius: 10px;
     width: 300px;
@@ -71,11 +107,13 @@ ul li{
     padding: 8px;
 }
 .noticias-container{
+    justify-content: center;
     width: 100%;
     background-color: #9B2247;
 }
 .noticias{
     margin: 0 auto;
+    justify-content: center;
     width: 90%;
 }
 
@@ -84,8 +122,9 @@ ul li{
     margin: 0 auto;
 }
 .button_section{
-    margin: 130px auto;
-    margin-top: 80px;
+    /* margin: 130px auto; */
+    margin: 50px auto;
+    /* margin-top: 80px; */
     display: flex;
     justify-content: center;
     width: 90%;
@@ -157,11 +196,31 @@ ul li{
         margin-bottom: 40px;
     }
     #congreso{
-        width: 100%;
+        width: 90%;
     }
     .subtitulos{
         padding: 0pt;
         margin-bottom: 20px;
         font-size: 15px;
     }
-  }
+    .data{
+        margin-bottom: 0;
+    }
+    .im-sec{
+        display: block;
+        margin-bottom: 0;
+    }
+    .main{
+        margin-top: 30px;
+    }
+    .foto-data{
+        width: 300px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    /* .im-sec{
+        display: none;
+    } */
+
+
+ }
